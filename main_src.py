@@ -283,6 +283,7 @@ def draw():
     cv.hline(0, W, 118, GOLD, 4)
     cv.center(14, "THE WORLD TODAY", 6, WHITE)
     cv.center(76, "THURSDAY 26 NOVEMBER 2026", 3, GOLD)
+    cv.center(100, "VOL. I  -  NO. 330  -  PRICE FREE", 2, GOLD)
     # lead story
     cv.rect(24, 134, 976, 252, WHITE)
     cv.border(24, 134, 976, 252, INK, 3)
@@ -306,6 +307,8 @@ def draw():
             "SPACE STATION  -  INDIA MARKS 18 YEARS SINCE 26/11  -  "
             "CAIRO TANKER CRASH KILLS 30",
             2, WHITE, lh=20)
+    # Gold frame around the whole front page, drawn last so it sits on top.
+    cv.border(0, 0, W, H, GOLD, 4)
     return cv
 
 
